@@ -1,0 +1,5 @@
+package org.usfirst.frc5112.Magni.subsystems;
+
+public class Kicker {
+
+}
