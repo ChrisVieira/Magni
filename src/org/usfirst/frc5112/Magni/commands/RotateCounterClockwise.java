@@ -1,31 +1,33 @@
 package org.usfirst.frc5112.Magni.commands;
 
-import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5112.Magni.Robot;
+import edu.wpi.first.wpilibj.command.Command;
 
-public class RaiseArm extends Command {
+public class RotateCounterClockwise extends Command {
 
-	public RaiseArm() {
-		requires(Robot.obstacleArm);
-		setTimeout(1);
-	}
-
+	@Override
 	protected void initialize() {
-		Robot.obstacleArm.up(0);
+		Robot.drivetrain.rotateCounterClockwise(0);
 	}
 
+	@Override
 	protected void execute() {
+
 	}
 
+	@Override
 	protected boolean isFinished() {
-		return isTimedOut();
+		return false;
 	}
 
+	@Override
 	protected void end() {
-		Robot.obstacleArm.stop();
+		Robot.drivetrain.stop();
 	}
 
+	@Override
 	protected void interrupted() {
 		end();
 	}
+
 }

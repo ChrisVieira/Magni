@@ -2,7 +2,6 @@ package org.usfirst.frc5112.Magni;
 
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import java.util.Vector;
 
 public class RobotMap {
 	public static DigitalInput obstacleArmLimitSwitch;
