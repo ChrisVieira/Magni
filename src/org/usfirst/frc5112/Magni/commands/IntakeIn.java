@@ -7,7 +7,6 @@ public class IntakeIn extends Command {
 
 	public IntakeIn() {
 		requires(Robot.intake);
-
 	}
 
 	protected void initialize() {

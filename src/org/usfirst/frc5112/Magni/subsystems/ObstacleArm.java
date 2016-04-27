@@ -1,9 +1,8 @@
 package org.usfirst.frc5112.Magni.subsystems;
 
-import org.usfirst.frc5112.Magni.RobotMap;
-import org.usfirst.frc5112.Magni.commands.*;
-import edu.wpi.first.wpilibj.*;
+import org.usfirst.frc5112.Magni.commands.RobotMap;
 
+import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class ObstacleArm extends Subsystem {
