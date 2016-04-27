@@ -7,11 +7,21 @@ import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class Intake extends Subsystem {
-	private final SpeedController rightIntakeMotor = RobotMap.rightIntakeMotor;
-	private final SpeedController leftIntakeMotor = RobotMap.leftIntakeMotor;
+	private final SpeedController intakeMotor = RobotMap.intakeMotor;
 
 	public void initDefaultCommand() {
-		rightIntakeMotor.set(0);
-		leftIntakeMotor.set(0);
+		stop();
+	}
+
+	public void stop() {
+		intakeMotor.set(0);
+	}
+
+	public void intakeIn(double speed) {
+		intakeMotor.set(speed);
+	}
+
+	public void intakeOut(double speed) {
+		intakeMotor.set(-speed);
 	}
 }
