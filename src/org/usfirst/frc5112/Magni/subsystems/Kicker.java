@@ -12,6 +12,7 @@ public class Kicker extends Subsystem {
 	public void initDefaultCommand() {
 		stop();
 	}
+
 	public void stop() {
 		kickerMotor.set(0);
 	}
