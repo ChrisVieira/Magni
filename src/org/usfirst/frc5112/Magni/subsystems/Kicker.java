@@ -10,6 +10,9 @@ public class Kicker extends Subsystem {
 	private final SpeedController kickerMotor = RobotMap.kickerMotor;
 
 	public void initDefaultCommand() {
+		stop();
+	}
+	public void stop() {
 		kickerMotor.set(0);
 	}
 

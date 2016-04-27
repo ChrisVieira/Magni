@@ -14,15 +14,21 @@ public class Shooter extends Subsystem {
 	public void initDefaultCommand() {
 		stop();
 	}
+
 	public void shooterMotors(double speed) {
 		rightShooterMotor.set(speed);
 		leftShooterMotor.set(-speed);
 	}
+
 	public void stop() {
 		Robot.shooter.shooterMotors(0);
 	}
+
 	public void shoot(double speed) {
 		Robot.shooter.shooterMotors(speed);
 	}
-	public void opisite
+
+	public void reverse(double speed) {
+		Robot.shooter.shooterMotors(-speed);
+	}
 }
