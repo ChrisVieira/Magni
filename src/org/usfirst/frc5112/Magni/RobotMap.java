@@ -1,10 +1,8 @@
 package org.usfirst.frc5112.Magni;
 
 import edu.wpi.first.wpilibj.*;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 public class RobotMap {
-	public static DigitalInput obstacleArmLimitSwitch;
 	public static SpeedController obstacleArmMotor;
 	public static SpeedController intakeMotor;
 	public static SpeedController leftShooterMotor;
@@ -14,10 +12,11 @@ public class RobotMap {
 	public static SpeedController leftFrontDriveTrainMotor;
 	public static SpeedController leftBackDriveTrainMotor;
 	public static SpeedController kickerMotor;
+	public static RobotDrive driveTrainRobotDrive;
 
 	public static void init() {
-		obstacleArmLimitSwitch = new DigitalInput(0);
-		LiveWindow.addSensor("Obstacle Arm", "Limit Switch", obstacleArmLimitSwitch);
+		driveTrainRobotDrive = new RobotDrive(rightFrontDriveTrainMotor, leftBackDriveTrainMotor,
+				rightFrontDriveTrainMotor, rightBackDriveTrainMotor);
 		obstacleArmMotor = new Victor(1);
 		intakeMotor = new Victor(3);
 		leftShooterMotor = new CANTalon(4);

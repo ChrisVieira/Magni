@@ -1,12 +1,11 @@
 package org.usfirst.frc5112.Magni.subsystems;
 
-import org.usfirst.frc5112.Magni.commands.RobotMap;
+import org.usfirst.frc5112.Magni.RobotMap;
 
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public class ObstacleArm extends Subsystem {
-	DigitalInput limitSwitch = RobotMap.obstacleArmLimitSwitch;
 	private final SpeedController obstacleArmMotor = RobotMap.obstacleArmMotor;
 
 	public void initDefaultCommand() {
