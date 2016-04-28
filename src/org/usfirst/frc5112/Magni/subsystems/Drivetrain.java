@@ -13,7 +13,6 @@ public class Drivetrain extends Subsystem {
 	private final SpeedController leftFrontDriveTrainMotor = RobotMap.leftFrontDriveTrainMotor;
 	private final RobotDrive driveTrainRobotDrive = RobotMap.driveTrainRobotDrive;
 
-
 	public void initDefaultCommand() {
 	}
 

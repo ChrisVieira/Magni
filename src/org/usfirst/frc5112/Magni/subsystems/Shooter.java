@@ -1,8 +1,6 @@
 package org.usfirst.frc5112.Magni.subsystems;
 
-import org.usfirst.frc5112.Magni.Robot;
 import org.usfirst.frc5112.Magni.RobotMap;
-
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -20,14 +18,14 @@ public class Shooter extends Subsystem {
 	}
 
 	public void stop() {
-		Robot.shooter.shooterMotors(0);
+		shooterMotors(0);
 	}
 
 	public void spin(double speed) {
-		Robot.shooter.shooterMotors(speed);
+		shooterMotors(speed);
 	}
 
 	public void spinReverse(double speed) {
-		Robot.shooter.shooterMotors(-speed);
+		shooterMotors(-speed);
 	}
 }
