@@ -1,7 +1,6 @@
 package org.usfirst.frc5112.Magni.commands;
 
 import org.usfirst.frc5112.Magni.Robot;
-
 import edu.wpi.first.wpilibj.command.Command;
 
 public class SpinFlyWheeelBackwards extends Command {
