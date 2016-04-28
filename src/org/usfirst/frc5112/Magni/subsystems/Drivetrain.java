@@ -1,7 +1,8 @@
 package org.usfirst.frc5112.Magni.subsystems;
 
+import org.usfirst.frc5112.Magni.Robot;
 import org.usfirst.frc5112.Magni.commands.RobotMap;
-
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -12,7 +13,7 @@ public class Drivetrain extends Subsystem {
 	private final SpeedController leftFrontDriveTrainMotor = RobotMap.leftFrontDriveTrainMotor;
 
 	public void initDefaultCommand() {
-		stop();
+		arcadeDrive(Robot.oi.joystick);
 	}
 
 	public void leftDriveTrain(double speed) {
@@ -48,5 +49,9 @@ public class Drivetrain extends Subsystem {
 	public void rotateCounterClockwise(double speed) {
 		rightDriveTrain(-speed);
 		leftDriveTrain(speed);
+	}
+
+	public void arcadeDrive(Joystick joystick) {
+		Robot.drivetrain.arcadeDrive(joystick);
 	}
 }
