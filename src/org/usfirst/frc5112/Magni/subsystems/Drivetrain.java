@@ -38,8 +38,8 @@ public class Drivetrain extends Subsystem {
 	}
 
 	public void backward(double speed) {
-		rightDriveTrain(speed);
-		leftDriveTrain(speed);
+		rightDriveTrain(-speed);
+		leftDriveTrain(-speed);
 	}
 
 	public void rotateClockwise(double speed) {
