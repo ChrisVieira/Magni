@@ -7,7 +7,7 @@ public class RotateClockwise extends Command {
 
 	@Override
 	protected void initialize() {
-		Robot.drivetrain.rotateClockwise(0);
+		Robot.drivetrain.rotateClockwise(0.5);
 	}
 
 	@Override

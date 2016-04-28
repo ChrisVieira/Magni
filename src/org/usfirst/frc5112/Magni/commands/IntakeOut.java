@@ -11,7 +11,7 @@ public class IntakeOut extends Command {
 	}
 
 	protected void initialize() {
-		Robot.intake.intakeOut(0);
+		Robot.intake.intakeOut(0.5);
 	}
 
 	protected void execute() {

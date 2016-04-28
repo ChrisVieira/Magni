@@ -11,7 +11,7 @@ public class LowerArm extends Command {
 	}
 
 	protected void initialize() {
-		Robot.obstacleArm.down(0);
+		Robot.obstacleArm.down(0.5);
 	}
 
 	protected void execute() {

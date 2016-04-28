@@ -12,7 +12,7 @@ public class SpinFlyWheeelBackwards extends Command {
 
 	@Override
 	protected void initialize() {
-		Robot.shooter.spinReverse(0);
+		Robot.shooter.spinReverse(0.5);
 	}
 
 	@Override

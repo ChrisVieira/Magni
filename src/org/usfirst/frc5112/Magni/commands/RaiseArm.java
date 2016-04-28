@@ -11,7 +11,7 @@ public class RaiseArm extends Command {
 	}
 
 	protected void initialize() {
-		Robot.obstacleArm.up(0);
+		Robot.obstacleArm.up(0.5);
 	}
 
 	protected void execute() {

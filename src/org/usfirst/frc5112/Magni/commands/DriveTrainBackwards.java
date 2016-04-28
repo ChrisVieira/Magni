@@ -10,7 +10,7 @@ public class DriveTrainBackwards extends Command {
 	}
 
 	protected void initialize() {
-		Robot.drivetrain.backward(0);
+		Robot.drivetrain.backward(0.5);
 	}
 
 	protected void execute() {

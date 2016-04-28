@@ -12,7 +12,7 @@ public class ReadyShooter extends Command {
 	@Override
 	protected void initialize() {
 		setTimeout(3);
-		Robot.shooter.spin(0);
+		Robot.shooter.spin(0.75);
 	}
 
 	@Override
