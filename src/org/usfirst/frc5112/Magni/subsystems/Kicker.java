@@ -21,6 +21,6 @@ public class Kicker extends Subsystem {
 	}
 
 	public void down(double speed) {
-		kickerMotor.set(speed);
+		kickerMotor.set(-speed);
 	}
 }
