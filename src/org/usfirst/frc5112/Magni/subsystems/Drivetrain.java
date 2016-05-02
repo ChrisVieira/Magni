@@ -27,31 +27,26 @@ public class Drivetrain extends Subsystem {
 	}
 
 	public void stop() {
-		rightDriveTrain(0);
-		leftDriveTrain(0);
+		driveTrainRobotDrive.drive(0, 0);
 	}
 
 	public void forward(double speed) {
-		rightDriveTrain(speed);
-		leftDriveTrain(speed);
+		driveTrainRobotDrive.drive(-speed, 0);
 	}
 
 	public void backward(double speed) {
-		rightDriveTrain(-speed);
-		leftDriveTrain(-speed);
+		driveTrainRobotDrive.drive(speed, 0);
 	}
 
 	public void rotateClockwise(double speed) {
-		rightDriveTrain(speed);
-		leftDriveTrain(-speed);
+		driveTrainRobotDrive.arcadeDrive(0,speed);
 	}
 
 	public void rotateCounterClockwise(double speed) {
-		rightDriveTrain(-speed);
-		leftDriveTrain(speed);
+		driveTrainRobotDrive.arcadeDrive(0, -speed);
 	}
 
 	public void arcadeDrive(Joystick joystick) {
-		driveTrainRobotDrive.arcadeDrive(joystick);
+		driveTrainRobotDrive.arcadeDrive(joystick.getY(), joystick.getZ());
 	}
 }
