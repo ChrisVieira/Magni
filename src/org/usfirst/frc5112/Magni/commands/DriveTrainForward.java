@@ -7,6 +7,7 @@ import org.usfirst.frc5112.Magni.Robot;
 public class DriveTrainForward extends Command {
 
 	public DriveTrainForward() {
+		// TODO: add timeout
 		requires(Robot.drivetrain);
 	}
 

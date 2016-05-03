@@ -5,7 +5,8 @@ import org.usfirst.frc5112.Magni.Robot;
 
 public class DriveTrainBackwards extends Command {
 
-	public DriveTrainBackwards() {
+	public DriveTrainBackwards(double time) {
+		super(time);
 		requires(Robot.drivetrain);
 	}
 
@@ -17,7 +18,7 @@ public class DriveTrainBackwards extends Command {
 	}
 
 	protected boolean isFinished() {
-		return false;
+		return isTimedOut();
 	}
 
 	protected void end() {

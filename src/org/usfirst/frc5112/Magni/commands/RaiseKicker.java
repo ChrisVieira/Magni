@@ -12,6 +12,7 @@ public class RaiseKicker extends Command {
 
 	protected void initialize() {
 		setTimeout(0.5);
+		Robot.kicker.up(0.5);
 	}
 
 	protected void execute() {

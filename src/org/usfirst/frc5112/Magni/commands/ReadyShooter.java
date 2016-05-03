@@ -22,17 +22,17 @@ public class ReadyShooter extends Command {
 
 	@Override
 	protected boolean isFinished() {
-		return false;
+		return isTimedOut();
 	}
 
 	@Override
 	protected void end() {
-		Robot.shooter.stop();
+
 	}
 
 	@Override
 	protected void interrupted() {
-		end();
+		Robot.shooter.stop();
 	}
 
 }

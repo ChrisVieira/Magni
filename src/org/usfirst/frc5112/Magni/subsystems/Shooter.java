@@ -9,23 +9,19 @@ public class Shooter extends Subsystem {
 	private final SpeedController rightShooterMotor = RobotMap.rightShooterMotor;
 
 	public void initDefaultCommand() {
-		stop();
+		
 	}
 
-	public void shooterMotors(double speed) {
+	public void stop() {
+		spin(0);
+	}
+
+	public void spin(double speed) {
 		rightShooterMotor.set(speed);
 		leftShooterMotor.set(-speed);
 	}
 
-	public void stop() {
-		shooterMotors(0);
-	}
-
-	public void spin(double speed) {
-		shooterMotors(speed);
-	}
-
 	public void spinReverse(double speed) {
-		shooterMotors(-speed);
+		spin(-speed);
 	}
 }
