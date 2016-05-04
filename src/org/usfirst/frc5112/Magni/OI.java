@@ -1,5 +1,6 @@
 package org.usfirst.frc5112.Magni;
 
+import org.usfirst.frc5112.Magni.commands.LowerArm;
 import org.usfirst.frc5112.Magni.commands.RaiseArm;
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -23,6 +24,7 @@ public class OI {
 		joystickButton4 = new JoystickButton(joystick, 4);
 
 		xbox.A.whenPressed(new RaiseArm());
+		xbox.B.whenPressed(new LowerArm());
 	}
 
 	public Joystick getJoystick() {
