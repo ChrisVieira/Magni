@@ -1,32 +1,34 @@
-
 package org.usfirst.frc5112.Magni.commands;
 
-import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5112.Magni.Robot;
 
-public class DriveTrainForward extends Command {
+import edu.wpi.first.wpilibj.command.Command;
 
-	public DriveTrainForward(double time) {
-		super(time);
-		requires(Robot.drivetrain);
-	}
+public class SpinFlyWheel extends Command {
 
+	@Override
 	protected void initialize() {
-		Robot.drivetrain.forward(0.5);
+		setTimeout(3);
 	}
 
+	@Override
 	protected void execute() {
+		Robot.shooter.spin(.8);
 	}
 
+	@Override
 	protected boolean isFinished() {
 		return isTimedOut();
 	}
 
+	@Override
 	protected void end() {
-		Robot.drivetrain.stop();
+		Robot.shooter.stop();
 	}
 
+	@Override
 	protected void interrupted() {
 		end();
 	}
+
 }

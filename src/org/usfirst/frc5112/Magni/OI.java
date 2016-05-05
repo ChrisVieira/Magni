@@ -1,5 +1,7 @@
 package org.usfirst.frc5112.Magni;
 
+import org.usfirst.frc5112.Magni.commands.IntakeIn;
+import org.usfirst.frc5112.Magni.commands.IntakeOut;
 import org.usfirst.frc5112.Magni.commands.LowerArm;
 import org.usfirst.frc5112.Magni.commands.RaiseArm;
 import edu.wpi.first.wpilibj.*;
@@ -25,6 +27,10 @@ public class OI {
 
 		xbox.A.whenPressed(new RaiseArm());
 		xbox.B.whenPressed(new LowerArm());
+		xbox.DPAD_UP.whenActive(new IntakeIn());
+		xbox.DPAD_DOWN.whenActive(new IntakeOut());
+		xbox.Y.whenPressed(new RaiseArm());
+		xbox.X.whenPressed(new LowerArm());
 	}
 
 	public Joystick getJoystick() {
