@@ -2,7 +2,6 @@ package org.usfirst.frc5112.Magni.subsystems;
 
 import org.usfirst.frc5112.Magni.RobotMap;
 import org.usfirst.frc5112.Magni.commands.ArcadeDrive;
-
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
