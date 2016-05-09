@@ -1,7 +1,6 @@
 package org.usfirst.frc5112.Magni.subsystems;
 
 import org.usfirst.frc5112.Magni.RobotMap;
-
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
