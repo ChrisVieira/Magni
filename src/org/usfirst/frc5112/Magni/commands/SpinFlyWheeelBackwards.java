@@ -9,29 +9,22 @@ public class SpinFlyWheeelBackwards extends Command {
 		requires(Robot.shooter);
 	}
 
-	@Override
 	protected void initialize() {
 		Robot.shooter.spinReverse(0.5);
 	}
 
-	@Override
 	protected void execute() {
-
 	}
 
-	@Override
 	protected boolean isFinished() {
 		return false;
 	}
 
-	@Override
 	protected void end() {
 		Robot.shooter.stop();
 	}
 
-	@Override
 	protected void interrupted() {
 		end();
 	}
-
 }

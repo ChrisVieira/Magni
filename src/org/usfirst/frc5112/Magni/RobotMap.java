@@ -18,7 +18,7 @@ public class RobotMap {
 		driveTrainRobotDrive = new RobotDrive(rightFrontDriveTrainMotor, leftBackDriveTrainMotor,
 				rightFrontDriveTrainMotor, rightBackDriveTrainMotor);
 		obstacleArmMotor = new Victor(1);
-		intakeMotor = new Victor(3);
+		intakeMotor = new Victor(2);
 		leftShooterMotor = new CANTalon(4);
 		rightShooterMotor = new CANTalon(5);
 		rightFrontDriveTrainMotor = new CANTalon(6);

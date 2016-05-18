@@ -8,8 +8,7 @@ public class Shooter extends Subsystem {
 	private final SpeedController leftShooterMotor = RobotMap.leftShooterMotor;
 	private final SpeedController rightShooterMotor = RobotMap.rightShooterMotor;
 
-	public void initDefaultCommand() {
-		
+	public void initDefaultCommand() {	
 	}
 
 	public void stop() {

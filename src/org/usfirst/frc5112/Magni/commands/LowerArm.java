@@ -7,7 +7,6 @@ public class LowerArm extends Command {
 
 	public LowerArm() {
 		requires(Robot.obstacleArm);
-
 	}
 
 	protected void initialize() {

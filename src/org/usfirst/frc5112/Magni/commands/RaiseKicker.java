@@ -7,7 +7,6 @@ public class RaiseKicker extends Command {
 
 	public RaiseKicker() {
 		requires(Robot.kicker);
-
 	}
 
 	protected void initialize() {
