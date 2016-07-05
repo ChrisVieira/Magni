@@ -10,7 +10,7 @@ public class LowerKicker extends Command {
 	}
 
 	protected void execute() {
-		Robot.kicker.up(0.5);
+		Robot.kicker.down(0.5);
 	}
 
 	protected boolean isFinished() {

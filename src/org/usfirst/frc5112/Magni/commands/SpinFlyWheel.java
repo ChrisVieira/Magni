@@ -18,10 +18,11 @@ public class SpinFlyWheel extends Command {
 	}
 
 	protected void end() {
-		Robot.shooter.stop();
+//		Robot.shooter.stop();
 	}
 
 	protected void interrupted() {
-		end();
+//		end();
+		Robot.shooter.stop();
 	}
 }
