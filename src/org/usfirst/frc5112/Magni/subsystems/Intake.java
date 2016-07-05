@@ -16,10 +16,10 @@ public class Intake extends Subsystem {
 	}
 
 	public void intakeIn(double speed) {
-		intakeMotor.set(speed);
+		intakeMotor.set(-speed);
 	}
 
 	public void intakeOut(double speed) {
-		intakeMotor.set(-speed);
+		intakeMotor.set(speed);
 	}
 }
